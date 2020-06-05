@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+body {
+  background: url(../img/page_bg.png),radial-gradient(circle,#56ccf2 0%,#2f80ed 100%);
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}

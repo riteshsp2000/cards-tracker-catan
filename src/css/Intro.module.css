@@ -1,0 +1,31 @@
+.customDiv {
+  background-color:rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 2rem 2rem; 
+  margin: 1rem;
+}
+
+.introHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.headerImage{
+  width: 30%;
+}
+
+.introTitle {
+  font-size: 3rem;
+}
+
+.introPara {
+  font-size: 1.5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
