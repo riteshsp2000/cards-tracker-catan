@@ -29,3 +29,8 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.intoPara a {
+  color: white;
+  text-decoration: underline;
+}
