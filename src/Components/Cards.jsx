@@ -1,17 +1,15 @@
 import React from 'react';
 import Card from './Card';
 
-const Cards = () => {
+import styles from '../css/Card.module.css';
+
+const Cards = ({ players }) => {
   return (
-    <div className='ui raised container three column grid'>
-      <div className='column'>
-        <Card />
-      </div>
-      <div className='column'>
-        <Card />
-      </div>
-      <div className='column'>
-        <Card />
+    <div className='ui container'>
+      <div className={styles.cardsContainer}>
+        <Card name={'Ritesh'} numbers={[1, 2, 3, 4, 5]} />
+        <Card name={'Ritesh'} numbers={[1, 2, 3, 4, 5]} />
+        <Card name={'Ritesh'} numbers={[1, 2, 3, 4, 5]} />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from '../css/Card.module.css';
 
-const Card = ({ numbers }) => {
+const Card = ({ name, numbers }) => {
   const renderIcon = (card, number) => {
     return (
       <div className='item'>
@@ -13,26 +13,31 @@ const Card = ({ numbers }) => {
           <button className='ui button primary'>Add</button>
           <button className='ui button negative'>Remove</button>
         </div>
-        <div class={styles.statistic}>
+        <div className={styles.statistic}>
           <h2> {number}</h2>
         </div>
       </div>
     );
   };
 
-  const renderIcons = () => {
+  const renderIcons = (numbers) => {
     return (
       <div className='ui items'>
-        {renderIcon('card_brick', 5)}
-        {renderIcon('card_lumber', 6)}
-        {renderIcon('card_wool', 3)}
-        {renderIcon('card_grain', 7)}
-        {renderIcon('card_ore', 9)}
+        {renderIcon('card_brick', numbers[0])}
+        {renderIcon('card_lumber', numbers[1])}
+        {renderIcon('card_wool', numbers[2])}
+        {renderIcon('card_grain', numbers[3])}
+        {renderIcon('card_ore', numbers[4])}
       </div>
     );
   };
 
-  return <div>{renderIcons()}</div>;
+  return (
+    <div className={styles.card}>
+      <h2 className={styles.playerName}>{name}</h2>
+      {renderIcons(numbers)}
+    </div>
+  );
 };
 
 export default Card;

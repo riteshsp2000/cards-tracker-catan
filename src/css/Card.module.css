@@ -6,3 +6,33 @@
   display: flex;
   align-items: center;
 }
+
+.playerName {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card {
+  background-color:rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.noPlayerContent {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 660px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
