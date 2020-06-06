@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Intro from './Intro';
+import Cards from './Cards';
 
 const Home = () => {
   return (
     <div>
       <Intro />
-      <h3>flakdjflkajsdfl</h3>
-      <h3>flakdjflkajsdfl</h3>
+      <Cards className='container' />
     </div>
   );
 };

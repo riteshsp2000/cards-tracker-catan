@@ -1,0 +1,8 @@
+#contentSpacing {
+  padding: 0 5px;
+}
+
+.statistic {
+  display: flex;
+  align-items: center;
+}
