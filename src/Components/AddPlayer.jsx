@@ -3,7 +3,9 @@ import React, { useState, useEffect } from 'react';
 import createBrowserHistory from '../histroy';
 import Modal from './Modal';
 
-const AddPlayer = () => {
+const AddPlayer = (props) => {
+  const [players, setPlayers] = useState(props);
+
   return (
     <Modal
       title='Delete Stream'
