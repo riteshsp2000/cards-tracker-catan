@@ -101,6 +101,42 @@ const Card = ({ player }) => {
     }
   };
 
+  const handleCityClick = () => {
+    if (grain >= 2 && ore >= 3) {
+      setGrain(grain - 2);
+      setOre(ore - 3);
+      return;
+    }
+
+    alert('Invalid input. The player does not have the sufficient cards!');
+    return;
+  };
+
+  const handleSettlementClick = () => {
+    if (bricks >= 1 && lumber >= 1 && wool >= 1 && grain >= 1) {
+      setBricks(bricks - 1);
+      setLumber(lumber - 1);
+      setGrain(grain - 1);
+      setWool(wool - 1);
+      return;
+    }
+
+    alert('Invalid input. The player does not have the sufficient cards!');
+    return;
+  };
+
+  const handleDevClick = () => {
+    if (grain >= 1 && ore >= 1 && wool >= 1) {
+      setGrain(grain - 1);
+      setOre(ore - 1);
+      setWool(wool - 1);
+      return;
+    }
+
+    alert('Invalid input. The player does not have the sufficient cards!');
+    return;
+  };
+
   const renderCities = () => {
     switch (player.color) {
       case 'Red':
@@ -110,16 +146,19 @@ const Card = ({ player }) => {
               className={styles.titleImage}
               src={require('../img/city/city_red.svg')}
               alt='Red'
+              onClick={() => handleCityClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/settlement/settlement_red.svg')}
               alt='Red'
+              onClick={() => handleSettlementClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/devcard.svg')}
               alt='Red'
+              onClick={() => handleDevClick()}
             />
           </div>
         );
@@ -130,16 +169,19 @@ const Card = ({ player }) => {
               className={styles.titleImage}
               src={require('../img/city/city_blue.svg')}
               alt='Red'
+              onClick={() => handleCityClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/settlement/settlement_blue.svg')}
               alt='Red'
+              onClick={() => handleSettlementClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/devcard.svg')}
               alt='Red'
+              onClick={() => handleDevClick()}
             />
           </div>
         );
@@ -150,16 +192,19 @@ const Card = ({ player }) => {
               className={styles.titleImage}
               src={require('../img/city/city_orange.svg')}
               alt='Red'
+              onClick={() => handleCityClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/settlement/settlement_orange.svg')}
               alt='Red'
+              onClick={() => handleSettlementClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/devcard.svg')}
               alt='Red'
+              onClick={() => handleDevClick()}
             />
           </div>
         );
@@ -170,16 +215,19 @@ const Card = ({ player }) => {
               className={styles.titleImage}
               src={require('../img/city/city_green.svg')}
               alt='Red'
+              onClick={() => handleCityClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/settlement/settlement_green.svg')}
               alt='Red'
+              onClick={() => handleSettlementClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/devcard.svg')}
               alt='Red'
+              onClick={() => handleDevClick()}
             />
           </div>
         );
@@ -190,16 +238,19 @@ const Card = ({ player }) => {
               className={styles.titleImage}
               src={require('../img/city/city_black.svg')}
               alt='Red'
+              onClick={() => handleCityClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/settlement/settlement_black.svg')}
               alt='Red'
+              onClick={() => handleSettlementClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/devcard.svg')}
               alt='Red'
+              onClick={() => handleDevClick()}
             />
           </div>
         );
@@ -210,16 +261,19 @@ const Card = ({ player }) => {
               className={styles.titleImage}
               src={require('../img/city/city_settler.svg')}
               alt='Red'
+              onClick={() => handleCityClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/settlement/settlement_settler.svg')}
               alt='Red'
+              onClick={() => handleSettlementClick()}
             />
             <img
               className={styles.titleImage}
               src={require('../img/devcard.svg')}
               alt='Red'
+              onClick={() => handleDevClick()}
             />
           </div>
         );

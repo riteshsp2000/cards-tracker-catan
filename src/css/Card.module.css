@@ -48,6 +48,10 @@
   align-items: center;
 }
 
+.citiesDiv img:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 660px) {
   .cardsContainer {
     display: flex;
