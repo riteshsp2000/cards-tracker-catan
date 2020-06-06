@@ -8,15 +8,19 @@ import styles from '../css/App.module.css';
 
 const App = () => {
   const [players, setPlayer] = useState([]);
-  console.log(players);
+
+  const handlePlayerChange = (players) => {
+    setPlayer(players);
+  };
+
   return (
     <Router history={createBrowserHistory}>
       <Switch>
         <Route path='/' exact>
-          <Home />
+          <Home players={players} />
         </Route>
         <Route path='/add' exact>
-          <AddPlayer {...players} />
+          <AddPlayer handlePlayerChange={handlePlayerChange} />
         </Route>
       </Switch>
     </Router>
