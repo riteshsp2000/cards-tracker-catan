@@ -1,3 +1,5 @@
+  <img src="https://img.shields.io/badge/client-React.js-blue" alt="react.js" />
+
 ## Card Tracker for Catan/Colonist
 A card tracker to know which all cards your opponent has in the game of catan/colonist.
 Checkout the game at <a href="https://colonist.io/#">https://colonist.io/#</>
